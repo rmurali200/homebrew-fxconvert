@@ -7,7 +7,7 @@ cask "fxconvert" do
   desc "Native macOS menu bar currency converter"
   homepage "https://github.com/rmurali200/FXConvert"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "FXConvert.app"
 

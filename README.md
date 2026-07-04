@@ -15,6 +15,14 @@ or, as a one-liner:
 brew install rmurali200/fxconvert/fxconvert
 ```
 
+Since this is a personal (third-party) tap rather than an official Homebrew tap, `brew install --cask` may refuse to load it the first time with an "untrusted tap" error. If that happens, run the command it suggests, e.g.:
+
+```bash
+brew trust --cask rmurali200/fxconvert/fxconvert
+```
+
+then retry the install.
+
 FXConvert is unsigned (no Apple Developer Program membership yet), so on first launch you'll need to right-click (or Control-click) `FXConvert.app` in `/Applications` and choose **Open** to bypass Gatekeeper's "unidentified developer" warning. This is a one-time step.
 
 This is a personal tap, not the official `homebrew-cask` repository — that requires code signing/notarization, which FXConvert doesn't have yet.
