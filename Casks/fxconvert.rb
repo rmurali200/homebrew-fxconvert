@@ -12,8 +12,10 @@ cask "fxconvert" do
   app "FXConvert.app"
 
   caveats <<~EOS
-    FXConvert is not yet code-signed or notarized. On first launch, right-click
-    (or Control-click) FXConvert.app in /Applications and choose "Open" to bypass
-    Gatekeeper's "unidentified developer" warning. This is only needed once.
+    FXConvert is not yet code-signed or notarized. On first launch you'll see
+    "Apple could not verify this app is free of malware" with only Done/Move
+    to Trash options. Click Done, then go to System Settings > Privacy &
+    Security, click "Open Anyway" next to the FXConvert block message, and
+    confirm on the final dialog. This is only needed once.
   EOS
 end

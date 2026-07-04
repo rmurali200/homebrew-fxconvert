@@ -23,7 +23,14 @@ brew trust --cask rmurali200/fxconvert/fxconvert
 
 then retry the install.
 
-FXConvert is unsigned (no Apple Developer Program membership yet), so on first launch you'll need to right-click (or Control-click) `FXConvert.app` in `/Applications` and choose **Open** to bypass Gatekeeper's "unidentified developer" warning. This is a one-time step.
+FXConvert is unsigned (no Apple Developer Program membership yet), so on first launch you'll see *"Apple could not verify this app is free of malware"* with only **Done**/**Move to Trash** options — no inline "Open" button. To get past it:
+
+1. Click **Done**.
+2. Open **System Settings → Privacy & Security**.
+3. Scroll to **Security** — click **Open Anyway** next to the FXConvert block message.
+4. Confirm with your password/Touch ID, then click **Open** on the final confirmation dialog.
+
+This is a one-time step; it launches normally after that.
 
 This is a personal tap, not the official `homebrew-cask` repository — that requires code signing/notarization, which FXConvert doesn't have yet.
 
