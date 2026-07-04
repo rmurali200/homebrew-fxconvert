@@ -1,6 +1,6 @@
 cask "fxconvert" do
-  version "1.1.0"
-  sha256 "82cbd1de538fcde6638dcd684941d6d6824d4d82a8412f07cd6ef0e3be385240"
+  version "1.1.1"
+  sha256 "10f0102943f529692e6c5598ec2214314bf251401fd4540b8a1d1f685a2c9ce6"
 
   url "https://github.com/rmurali200/FXConvert/releases/download/v#{version}/FXConvert.zip"
   name "FXConvert"
